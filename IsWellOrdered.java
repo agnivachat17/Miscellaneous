@@ -1,8 +1,8 @@
 import java.util.*;
-public class IsWellOrdered
+public class WellOrderedCheck
 {
     private int n;
-    public IsWellOrdered()
+    public WellOrderedCheck()
     {
         n=0;
     }
@@ -42,7 +42,7 @@ class InitWellOrdered
 {
     public static void main(String args[])
     {
-        IsWellOrdered obj = new IsWellOrdered();
+        WellOrderedCheck obj = new WellOrderedCheck();
         obj.accept();
         obj.display();
     }

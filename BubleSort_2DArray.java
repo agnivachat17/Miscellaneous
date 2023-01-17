@@ -21,9 +21,21 @@ class BubleSort_2DArray
                 k++;
             }
         }
-        for(int i=0;i<brr.length;i++)
+        System.out.println("Original contents of the array:");
+        k=0;
+        for(int i=0;i<r;i++)
         {
-             for(int j=1;j<brr.length-i;j++)
+            for(int j=0;j<c;j++)
+            {
+                arr[i][j]=brr[k];
+                k++;
+                System.out.print(arr[i][j]+"\t");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<brr.length-1;i++)
+        {
+             for(int j=1;j<brr.length-i-1;j++)
              {
                   if(brr[j-1]>brr[j])
                   {
@@ -34,6 +46,7 @@ class BubleSort_2DArray
              }
         }
         k=0;
+        System.out.println("New contents of the array:");
         for(int i=0;i<r;i++)
         {
             for(int j=0;j<c;j++)
